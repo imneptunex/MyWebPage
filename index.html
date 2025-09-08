@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merve Yuvacı - AI Developer</title>
+    <!-- Placeholder for your favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Scroll progress indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">MY</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#ai">AI Development</a></li>
+                <li><a href="#games">Game Development</a></li>
+                <li><a href="#mobile">Mobile Development</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="container">
+            <div class="section-content fade-in">
+                <h1>Merve Yuvacı</h1>
+                <h2>Junior AI Developer & Computer Science Student</h2>
+                <p>Passionate about artificial intelligence, game development, and creating innovative solutions that shape the future. Currently exploring the frontiers of AI while building engaging digital experiences.</p>
+                <a href="#about" class="cta-button">Discover My Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-content fade-in">
                 <h2 class="section-title">Who Am I</h2>
-                <img src="profile-photo.jpg" alt="Merve Yuvacı" class="about-photo">
+                <!-- ADDED: Photo placeholder -->
+                <img src="https://placehold.co/150x150/00d4ff/FFF?text=MY" alt="Merve Yuvacı" class="about-photo">
                 <p class="section-text">
                     I'm a dedicated computer science student with a passion for artificial intelligence and software development. As a junior AI developer, I'm constantly exploring new technologies and methodologies to solve complex problems. My journey in tech is driven by curiosity and a desire to create meaningful impact through innovative solutions.
                     <br><br>
@@ -22,9 +61,30 @@
         </div>
     </section>
 
+    <!-- Work Experience Section -->
     <section id="experience" class="section">
-        </section>
+        <div class="container">
+            <div class="section-content fade-in">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Junior AI Developer</h3>
+                        <p>Currently working on cutting-edge AI projects, developing machine learning models, and implementing intelligent solutions. Focused on natural language processing, computer vision, and deep learning applications.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Computer Science Student</h3>
+                        <p>Pursuing comprehensive education in computer science fundamentals, algorithms, data structures, and advanced topics. Actively participating in research projects and academic collaborations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Software Development Intern</h3>
+                        <p>Gained hands-on experience in full-stack development, working with modern frameworks and contributing to real-world projects that enhanced my technical skills and professional growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- AI Development Section -->
     <section id="ai" class="section">
         <div class="container">
             <div class="section-content fade-in">
@@ -33,8 +93,9 @@
                     My AI development journey encompasses various domains including machine learning, neural networks, and intelligent automation. I'm passionate about creating AI solutions that are both innovative and practical.
                 </p>
                 <div class="cards-grid">
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-ai.jpg" alt="Machine Learning Project" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=AI+Project" alt="Machine Learning Project" class="card-thumbnail">
                         <h3>Machine Learning Models</h3>
                         <p>Developing predictive models for data analysis and pattern recognition.</p>
                         <div class="tech-stack">
@@ -47,8 +108,9 @@
                             <a href="#" class="demo-btn">Live Demo</a>
                         </div>
                     </div>
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-nlp.jpg" alt="NLP Project" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=NLP+Project" alt="NLP Project" class="card-thumbnail">
                         <h3>Natural Language Processing</h3>
                         <p>Building applications for text analysis, sentiment analysis, and chatbots.</p>
                         <div class="tech-stack">
@@ -61,8 +123,9 @@
                             <a href="#" class="demo-btn">Live Demo</a>
                         </div>
                     </div>
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-cv.jpg" alt="Computer Vision Project" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=CV+Project" alt="Computer Vision Project" class="card-thumbnail">
                         <h3>Computer Vision</h3>
                         <p>Creating image recognition systems for object detection and classification.</p>
                         <div class="tech-stack">
@@ -80,6 +143,7 @@
         </div>
     </section>
 
+    <!-- Game Development Section -->
     <section id="games" class="section">
         <div class="container">
             <div class="section-content fade-in">
@@ -88,8 +152,9 @@
                     Game development combines my technical skills with creativity, allowing me to build immersive experiences that entertain and engage players.
                 </p>
                 <div class="cards-grid">
-                     <div class="card">
-                        <img src="project-unity.jpg" alt="Unity 3D Project" class="card-thumbnail">
+                     <!-- UPDATED: Project Card Structure -->
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=Unity+Project" alt="Unity 3D Project" class="card-thumbnail">
                         <h3>Unity 3D Projects</h3>
                         <p>Developing 3D games with interactive mechanics and physics simulations.</p>
                         <div class="tech-stack">
@@ -102,8 +167,9 @@
                             <a href="#" class="demo-btn">Live Demo</a>
                         </div>
                     </div>
-                     <div class="card">
-                        <img src="project-indie.jpg" alt="Indie Game Project" class="card-thumbnail">
+                     <!-- UPDATED: Project Card Structure -->
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=Indie+Game" alt="Indie Game Project" class="card-thumbnail">
                         <h3>Indie Game Development</h3>
                         <p>Working on independent game projects from concept to completion.</p>
                         <div class="tech-stack">
@@ -114,8 +180,9 @@
                             <a href="#" class="source-btn">Source Code</a>
                         </div>
                     </div>
-                     <div class="card">
-                        <img src="project-game-ai.jpg" alt="Game AI Project" class="card-thumbnail">
+                     <!-- UPDATED: Project Card Structure -->
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=Game+AI" alt="Game AI Project" class="card-thumbnail">
                         <h3>Game AI & Algorithms</h3>
                         <p>Implementing pathfinding algorithms and procedural content generation.</p>
                         <div class="tech-stack">
@@ -131,6 +198,7 @@
         </div>
     </section>
 
+    <!-- Mobile Development Section -->
     <section id="mobile" class="section">
         <div class="container">
             <div class="section-content fade-in">
@@ -139,8 +207,9 @@
                     Creating mobile applications that provide seamless user experiences across different platforms.
                 </p>
                 <div class="cards-grid">
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-flutter.jpg" alt="Flutter App" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=Flutter+App" alt="Flutter App" class="card-thumbnail">
                         <h3>Cross-Platform Apps</h3>
                         <p>Developing mobile applications for both iOS and Android platforms.</p>
                         <div class="tech-stack">
@@ -153,8 +222,9 @@
                             <a href="#" class="demo-btn">Live Demo</a>
                         </div>
                     </div>
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-swift.jpg" alt="iOS App" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=iOS+App" alt="iOS App" class="card-thumbnail">
                         <h3>Native iOS Development</h3>
                         <p>Building platform-specific applications leveraging native features.</p>
                         <div class="tech-stack">
@@ -166,8 +236,9 @@
                            <a href="#" class="source-btn">Source Code</a>
                         </div>
                     </div>
+                    <!-- UPDATED: Project Card Structure -->
                     <div class="card">
-                        <img src="project-uiux.jpg" alt="UI/UX Design" class="card-thumbnail">
+                        <img src="https://placehold.co/600x400/1a1a2e/FFF?text=UI/UX+Design" alt="UI/UX Design" class="card-thumbnail">
                         <h3>UI/UX Design</h3>
                         <p>Creating intuitive and visually appealing mobile interfaces.</p>
                         <div class="tech-stack">
@@ -183,6 +254,33 @@
         </div>
     </section>
 
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="section">
+        <div class="container">
+            <div class="section-content fade-in">
+                <h2 class="section-title">Volunteering</h2>
+                <p class="section-text">
+                    Giving back to the community is an important part of my life. I volunteer with Make-A-Wish, where I have the privilege of helping bring joy and hope to children facing critical illnesses.
+                </p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Make-A-Wish Volunteer</h3>
+                        <p>Working directly with children and families to help grant wishes and create magical moments. Using technology and creativity to bring smiles to little faces and support families during challenging times.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tech for Good</h3>
+                        <p>Leveraging my technical skills to support various charitable causes and community initiatives. Developing digital solutions that help non-profit organizations achieve their missions.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Mentorship</h3>
+                        <p>Mentoring younger students interested in computer science and technology, sharing knowledge and inspiring the next generation of developers and innovators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <div class="section-content fade-in">
@@ -192,6 +290,7 @@
                 </p>
                 
                 <div class="social-links">
+                    <!-- ADDED: Accessibility labels -->
                     <a href="mailto:merve@example.com" title="Email" aria-label="Send me an email">📧</a>
                     <a href="https://github.com/merveyuvaci" title="GitHub" aria-label="Visit my GitHub profile">🐙</a>
                     <a href="https://linkedin.com/in/merveyuvaci" title="LinkedIn" aria-label="Visit my LinkedIn profile">💼</a>
@@ -213,6 +312,7 @@
                     </div>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
+                <!-- Form success message container -->
                 <div id="form-success-message" style="display: none;">
                     Thank you for your message! I'll get back to you soon.
                 </div>
@@ -220,6 +320,7 @@
         </div>
     </section>
 
+    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
