@@ -4,44 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merve Yuvacı - AI Developer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="particles" id="particles"></div>
-    
-    <div class="scroll-indicator" id="scrollIndicator"></div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">MY</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#ai">AI Development</a></li>
-                <li><a href="#games">Game Development</a></li>
-                <li><a href="#mobile">Mobile Development</a></li>
-                <li><a href="#volunteering">Volunteering</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="section hero">
-        <div class="container">
-            <div class="section-content fade-in">
-                <h1>Merve Yuvacı</h1>
-                <h2>Junior AI Developer & Computer Science Student</h2>
-                <p>Passionate about artificial intelligence, game development, and creating innovative solutions that shape the future. Currently exploring the frontiers of AI while building engaging digital experiences.</p>
-                <a href="#about" class="cta-button">Discover My Journey</a>
-            </div>
-        </div>
-    </section>
-
     <section id="about" class="section">
         <div class="container">
             <div class="section-content fade-in">
                 <h2 class="section-title">Who Am I</h2>
+                <img src="profile-photo.jpg" alt="Merve Yuvacı" class="about-photo">
                 <p class="section-text">
                     I'm a dedicated computer science student with a passion for artificial intelligence and software development. As a junior AI developer, I'm constantly exploring new technologies and methodologies to solve complex problems. My journey in tech is driven by curiosity and a desire to create meaningful impact through innovative solutions.
                     <br><br>
@@ -52,26 +23,7 @@
     </section>
 
     <section id="experience" class="section">
-        <div class="container">
-            <div class="section-content fade-in">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="cards-grid">
-                    <div class="card">
-                        <h3>Junior AI Developer</h3>
-                        <p>Currently working on cutting-edge AI projects, developing machine learning models, and implementing intelligent solutions. Focused on natural language processing, computer vision, and deep learning applications.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Computer Science Student</h3>
-                        <p>Pursuing comprehensive education in computer science fundamentals, algorithms, data structures, and advanced topics. Actively participating in research projects and academic collaborations.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Software Development Intern</h3>
-                        <p>Gained hands-on experience in full-stack development, working with modern frameworks and contributing to real-world projects that enhanced my technical skills and professional growth.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <section id="ai" class="section">
         <div class="container">
@@ -82,19 +34,46 @@
                 </p>
                 <div class="cards-grid">
                     <div class="card">
+                        <img src="project-ai.jpg" alt="Machine Learning Project" class="card-thumbnail">
                         <h3>Machine Learning Models</h3>
-                        <p>Developing predictive models using Python, TensorFlow, and PyTorch. Focus on supervised and unsupervised learning algorithms for data analysis and pattern recognition.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Developing predictive models for data analysis and pattern recognition.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                            <a href="#" class="demo-btn">Live Demo</a>
+                        </div>
                     </div>
                     <div class="card">
+                        <img src="project-nlp.jpg" alt="NLP Project" class="card-thumbnail">
                         <h3>Natural Language Processing</h3>
-                        <p>Building NLP applications for text analysis, sentiment analysis, and chatbot development. Working with transformer models and language understanding frameworks.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Building applications for text analysis, sentiment analysis, and chatbots.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Hugging Face</span>
+                            <span>NLTK</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                            <a href="#" class="demo-btn">Live Demo</a>
+                        </div>
                     </div>
                     <div class="card">
+                        <img src="project-cv.jpg" alt="Computer Vision Project" class="card-thumbnail">
                         <h3>Computer Vision</h3>
-                        <p>Creating image recognition and processing systems using deep learning. Implementing solutions for object detection, image classification, and visual analysis.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Creating image recognition systems for object detection and classification.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>YOLO</span>
+                        </div>
+                        <div class="card-buttons">
+                           <a href="#" class="source-btn">Source Code</a>
+                           <a href="#" class="demo-btn">Live Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,23 +85,46 @@
             <div class="section-content fade-in">
                 <h2 class="section-title">Game Development</h2>
                 <p class="section-text">
-                    Game development combines my technical skills with creativity, allowing me to build immersive experiences that entertain and engage players. I work with various game engines and programming languages to bring ideas to life.
+                    Game development combines my technical skills with creativity, allowing me to build immersive experiences that entertain and engage players.
                 </p>
                 <div class="cards-grid">
-                    <div class="card">
+                     <div class="card">
+                        <img src="project-unity.jpg" alt="Unity 3D Project" class="card-thumbnail">
                         <h3>Unity 3D Projects</h3>
-                        <p>Developing 3D games using Unity engine with C# scripting. Creating interactive gameplay mechanics, physics simulations, and engaging user interfaces.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Developing 3D games with interactive mechanics and physics simulations.</p>
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Blender</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                            <a href="#" class="demo-btn">Live Demo</a>
+                        </div>
                     </div>
-                    <div class="card">
+                     <div class="card">
+                        <img src="project-indie.jpg" alt="Indie Game Project" class="card-thumbnail">
                         <h3>Indie Game Development</h3>
-                        <p>Working on independent game projects from concept to completion. Focusing on innovative gameplay mechanics and unique artistic styles.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Working on independent game projects from concept to completion.</p>
+                        <div class="tech-stack">
+                            <span>Godot</span>
+                            <span>GDScript</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
                     </div>
-                    <div class="card">
+                     <div class="card">
+                        <img src="project-game-ai.jpg" alt="Game AI Project" class="card-thumbnail">
                         <h3>Game AI & Algorithms</h3>
-                        <p>Implementing artificial intelligence for game characters, pathfinding algorithms, and procedural content generation systems.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Implementing pathfinding algorithms and procedural content generation.</p>
+                        <div class="tech-stack">
+                            <span>C++</span>
+                            <span>A* Algorithm</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,48 +136,47 @@
             <div class="section-content fade-in">
                 <h2 class="section-title">Mobile Development</h2>
                 <p class="section-text">
-                    Creating mobile applications that provide seamless user experiences across different platforms. I focus on performance optimization, intuitive design, and robust functionality.
+                    Creating mobile applications that provide seamless user experiences across different platforms.
                 </p>
                 <div class="cards-grid">
                     <div class="card">
+                        <img src="project-flutter.jpg" alt="Flutter App" class="card-thumbnail">
                         <h3>Cross-Platform Apps</h3>
-                        <p>Developing mobile applications using Flutter and React Native for both iOS and Android platforms. Ensuring consistent performance and user experience.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <p>Developing mobile applications for both iOS and Android platforms.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="source-btn">Source Code</a>
+                            <a href="#" class="demo-btn">Live Demo</a>
+                        </div>
                     </div>
                     <div class="card">
-                        <h3>Native Development</h3>
-                        <p>Building platform-specific applications using Swift for iOS and Kotlin for Android, leveraging native features and optimized performance.</p>
-                        <a href="#" class="source-btn">Source Code</a>
+                        <img src="project-swift.jpg" alt="iOS App" class="card-thumbnail">
+                        <h3>Native iOS Development</h3>
+                        <p>Building platform-specific applications leveraging native features.</p>
+                        <div class="tech-stack">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>Xcode</span>
+                        </div>
+                        <div class="card-buttons">
+                           <a href="#" class="source-btn">Source Code</a>
+                        </div>
                     </div>
                     <div class="card">
+                        <img src="project-uiux.jpg" alt="UI/UX Design" class="card-thumbnail">
                         <h3>UI/UX Design</h3>
-                        <p>Creating intuitive and visually appealing mobile interfaces with focus on user experience, accessibility, and modern design principles.</p>
-                        <a href="#" class="source-btn">Source Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="volunteering" class="section">
-        <div class="container">
-            <div class="section-content fade-in">
-                <h2 class="section-title">Volunteering</h2>
-                <p class="section-text">
-                    Giving back to the community is an important part of my life. I volunteer with Make-A-Wish, where I have the privilege of helping bring joy and hope to children facing critical illnesses.
-                </p>
-                <div class="cards-grid">
-                    <div class="card">
-                        <h3>Make-A-Wish Volunteer</h3>
-                        <p>Working directly with children and families to help grant wishes and create magical moments. Using technology and creativity to bring smiles to little faces and support families during challenging times.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Tech for Good</h3>
-                        <p>Leveraging my technical skills to support various charitable causes and community initiatives. Developing digital solutions that help non-profit organizations achieve their missions.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Mentorship</h3>
-                        <p>Mentoring younger students interested in computer science and technology, sharing knowledge and inspiring the next generation of developers and innovators.</p>
+                        <p>Creating intuitive and visually appealing mobile interfaces.</p>
+                        <div class="tech-stack">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                        </div>
+                         <div class="card-buttons">
+                            <a href="#" class="source-btn">View Designs</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,9 +192,10 @@
                 </p>
                 
                 <div class="social-links">
-                    <a href="mailto:merveeyuvaci@gmail.com" title="Email">📧</a>
-                    <a href="https://github.com/imneptunex" title="GitHub">🐙</a>
-                    <a href="https://www.linkedin.com/in/merve-y-3b57b2253/" title="LinkedIn">💼</a>
+                    <a href="mailto:merve@example.com" title="Email" aria-label="Send me an email">📧</a>
+                    <a href="https://github.com/merveyuvaci" title="GitHub" aria-label="Visit my GitHub profile">🐙</a>
+                    <a href="https://linkedin.com/in/merveyuvaci" title="LinkedIn" aria-label="Visit my LinkedIn profile">💼</a>
+                    <a href="https://twitter.com/merveyuvaci" title="Twitter" aria-label="Visit my Twitter profile">🐦</a>
                 </div>
 
                 <form class="contact-form">
@@ -211,6 +213,9 @@
                     </div>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
+                <div id="form-success-message" style="display: none;">
+                    Thank you for your message! I'll get back to you soon.
+                </div>
             </div>
         </div>
     </section>

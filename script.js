@@ -1,6 +1,7 @@
 // Generate floating particles
 function createParticles() {
     const particlesContainer = document.getElementById('particles');
+    if (!particlesContainer) return;
     const particleCount = 50;
     
     for (let i = 0; i < particleCount; i++) {
@@ -16,10 +17,12 @@ function createParticles() {
 
 // Scroll progress indicator
 function updateScrollIndicator() {
-    const scrollTop = window.pageYOffset;
-    const docHeight = document.body.offsetHeight - window.innerHeight;
+    const scrollIndicator = document.getElementById('scrollIndicator');
+    if (!scrollIndicator) return;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPercent = (scrollTop / docHeight) * 100;
-    document.getElementById('scrollIndicator').style.width = scrollPercent + '%';
+    scrollIndicator.style.width = scrollPercent + '%';
 }
 
 // Fade in animation on scroll
@@ -40,9 +43,10 @@ function setupSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
@@ -51,22 +55,35 @@ function setupSmoothScrolling() {
     });
 }
 
-// Contact form handling
+// UPDATED: Contact form handling for a better UX
 function setupContactForm() {
     const form = document.querySelector('.contact-form');
+    const successMessage = document.getElementById('form-success-message');
+    
+    if (!form || !successMessage) return;
+
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        form.reset();
+        
+        // Hide the form and show the success message
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+
+        // Optional: Reset form and show it again after a delay
+        setTimeout(() => {
+            form.reset();
+            form.style.display = 'block';
+            successMessage.style.display = 'none';
+        }, 5000); // Re-shows the form after 5 seconds
     });
 }
 
-// Initialize everything
+// Initialize everything on page load
 document.addEventListener('DOMContentLoaded', function() {
     createParticles();
     setupSmoothScrolling();
     setupContactForm();
-    handleScrollAnimations();
+    handleScrollAnimations(); // Initial check
 });
 
 // Handle scroll events

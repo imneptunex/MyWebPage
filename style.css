@@ -192,6 +192,19 @@ body {
     margin: 0 auto;
 }
 
+/* NEW: About Me Photo Style */
+.about-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 2rem;
+    border: 3px solid #00d4ff;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+
 /* Cards for projects */
 .cards-grid {
     display: grid;
@@ -207,12 +220,25 @@ body {
     border: 1px solid rgba(0, 212, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    /* NEW: Flex properties for consistent card layout */
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
     transform: translateY(-5px);
     border-color: #00d4ff;
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+/* NEW: Card Thumbnail Style */
+.card-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 212, 255, 0.2);
 }
 
 .card h3 {
@@ -225,9 +251,35 @@ body {
     color: #cccccc;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    /* NEW: Ensures paragraphs expand to fill space, aligning buttons */
+    flex-grow: 1; 
 }
 
-/* Source code buttons */
+/* NEW: Tech Stack Tags Styles */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack span {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* NEW: Card Buttons Container */
+.card-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; /* Pushes buttons to the bottom of the card */
+}
+
+/* Source code and demo buttons */
 .source-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -239,7 +291,7 @@ body {
     font-size: 0.9rem;
     border: 1px solid rgba(0, 212, 255, 0.4);
     transition: all 0.3s ease;
-    margin-top: 0.5rem;
+    text-align: center;
 }
 
 .source-btn:hover {
@@ -247,6 +299,26 @@ body {
     border-color: #00d4ff;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* NEW: Live Demo Button Style */
+.demo-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.demo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
 }
 
 /* Contact form */
@@ -283,6 +355,18 @@ body {
     border-color: #00d4ff;
     box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
+
+/* NEW: Contact form success message style */
+#form-success-message {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
 
 .social-links {
     display: flex;
